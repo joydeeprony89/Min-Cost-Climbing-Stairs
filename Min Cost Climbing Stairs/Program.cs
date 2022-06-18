@@ -42,10 +42,10 @@ namespace Min_Cost_Climbing_Stairs
         int onestepcost;
         int twostepcost = int.MaxValue;
         // if we take one step did not reach at the end.
-        if (onestep != length)
+        if (onestep < length)
         {
           onestepcost = cost[i] + cost[onestep];
-          if (twostep != length)
+          if (twostep < length)
           {
             twostepcost = cost[i] + cost[twostep];
           }
